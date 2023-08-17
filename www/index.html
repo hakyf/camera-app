@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Camera App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Face Verification</h1>
+      <div class="videos">
+        <video id="cameraFeed" autoplay class="circular-frame"></video>
+      </div>
+      <p>Position your face on the circle</p>
+      <button id="nextButton">Next</button>
+    </div>
+    <div class="container" id="verificationContainer" style="display: none">
+      <h1>ID Card Verification</h1>
+      <div class="videos">
+        <video id="idCardFeed" autoplay class="card-frame"></video>
+      </div>
+      <p>Your e-KTP must fit in the box</p>
+      <button id="closeButton">Close</button>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
